@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوربین عقب اقتصادی | IronView</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;800&display=swap');
+        body { font-family: 'Vazirmatn', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .product-image-hover:hover { transform: scale(1.05); transition: all 0.5s ease; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-gray-200">
+
+    <!-- نوار ناوبری مینیمال -->
+    <nav class="fixed w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-white">IRON<span class="text-blue-500">VIEW</span></div>
+            <div class="space-x-6 space-x-reverse hidden md:block">
+                <a href="#home" class="hover:text-blue-400 transition">خانه</a>
+                <a href="#details" class="hover:text-blue-400 transition">مشخصات</a>
+                <a href="#gallery" class="hover:text-blue-400 transition">گالری</a>
+            </div>
+            <a href="#buy" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm font-bold transition">خرید فوری</a>
+        </div>
+    </nav>
+
+    <!-- بخش اصلی (Hero Section) -->
+    <section id="home" class="pt-32 pb-20 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 text-right">
+                    <span class="text-blue-500 font-bold tracking-widest uppercase text-sm">محصول اقتصادی و کاربردی</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-white mt-4 mb-6 leading-tight">دوربین عقب <br><span class="gradient-text">اقتصادی خودرو</span></h1>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        یک انتخاب هوشمندانه برای کسانی که به دنبال نصب آسان و قیمت مناسب هستند. با زاویه دید استاندارد و نصب روپلاکی برای تمامی مدل‌های خودرو.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="glass px-6 py-3 rounded-2xl">
+                            <span class="block text-xs text-gray-500">قیمت نهایی</span>
+                            <span class="text-2xl font-bold text-white">۴۹۴,۰۰۰ <small class="text-sm font-normal">تومان</small></span>
+                        </div>
+                        <a href="#buy" class="flex items-center justify-center bg-white text-slate-900 px-8 py-3 rounded-2xl font-bold hover:bg-blue-500 hover:text-white transition-all">
+                            <i class="fas fa-shopping-bag ml-2"></i> افزودن به سبد خرید
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -top-20 -left-20 w-64 h-64 bg-blue-600 rounded-full filter blur-[120px] opacity-20"></div>
+                    <img src="https://uploadkon.ir/uploads/45c117_26P-20260917-133636-1-1.jpg" alt="Main Camera" class="relative z-10 w-full rounded-3xl shadow-2xl product-image-hover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش مشخصات فنی (Specs) -->
+    <section id="details" class="py-20 bg-[#1e293b]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">مشخصات فنی محصول</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- ویژگی ۱ -->
+                <div class="glass p-8 rounded-3xl text-center">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-video text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">کیفیت تصویر</h3>
+                    <p class="text-sm text-gray-400">کیفیت معمولی و مناسب برای رانندگی روزانه</p>
+                </div>
+                <!-- ویژگی ۲ -->
+                <div class="glass p-8 rounded-3xl text-center">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-eye-slash text-2xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">دید در شب</h3>
+                    <p class="text-sm text-gray-400">فاقد مادون قرمز (مناسب برای روشنایی محیط)</p>
+                </div>
+                <!-- ویژگی ۳ -->
+                <div class="glass p-8 rounded-3xl text-center">
+                    <div class="w-14 h-14 bg-green-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-expand-arrows-alt text-2xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">زاویه دید</h3>
+                    <p class="text-sm text-gray-400">زاویه دید استاندارد و مناسب برای پارک</p>
+                </div>
+                <!-- ویژگی ۴ -->
+                <div class="glass p-8 rounded-3xl text-center">
+                    <div class="w-14 h-14 bg-orange-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tools text-2xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">نصب و اجرا</h3>
+                    <p class="text-sm text-gray-400">نصب روپلاکی آسان برای تمامی مدل‌ها</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش گالری (Gallery) -->
+    <section id="gallery" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">گالری تصاویر محصول</h2>
+                <p class="text-gray-500 mt-2">نمای دقیق‌تر از جزئیات دوربین</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img src="https://uploadkon.ir/uploads/ce0517_26P-20260917-133649-1.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover product-image-hover" alt="img">
+                <img src="https://uploadkon.ir/uploads/3f2617_26P-20260917-133900-1.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover product-image-hover" alt="img">
+                <img src="https://uploadkon.ir/uploads/e6d417_26P-20260917-133813.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover product-image-hover" alt="img">
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر (Footer) -->
+    <footer class="bg-black py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-2xl font-extrabold text-white mb-6">IRON<span class="text-blue-500">VIEW</span></div>
+            <p class="text-gray-500 text-sm mb-8">تخصصی‌ترین مرجع خرید تجهیزات امنیتی خودرو</p>
+            <div class="flex justify-center space-x-6 space-x-reverse mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="text-xs text-gray-600">
+                &copy; ۲۰۲۴ تمامی حقوق برای آیرون‌ویو محفوظ است.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
